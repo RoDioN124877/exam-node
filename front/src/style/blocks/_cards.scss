@@ -1,0 +1,65 @@
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+
+  .product-card {
+    background-color: $background-dark;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 12.5rem;
+      height: 12.5rem;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-size: 1.5em;
+    }
+    h3 {
+      margin-top: 10px;
+      font-size: 1em;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 1.1em;
+      width: 12.5rem;
+      text-align: center;
+      
+    }
+
+    .price {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .add-to-cart {
+      background-color: $accent-color;
+      color: $text-light;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      transition: 0.3s;
+      &:hover {
+        background-color: darken($accent-color, 10%);
+        transform: scale(1.05);
+      }
+    }
+  }
+}

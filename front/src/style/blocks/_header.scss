@@ -1,0 +1,59 @@
+header {
+  background: linear-gradient($main-color, #000);
+  color: $text-light;
+  padding: 20px 0;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+  
+      li {
+        margin-right: 20px;
+  
+        a {
+          text-decoration: none;
+          color: $text-light;
+          font-weight: bold;
+          font-size: 1.2em;
+  
+          &.cart-icon {
+            font-size: 1.5em;
+          }
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+  
+      .submenu {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        border-top: 1px solid #666;
+  
+        li {
+          display: block;
+  
+          a {
+            padding: 10px 20px;
+          }
+        }
+      }
+  
+      li:hover .submenu {
+        display: block;
+      }
+    }
+  }
+}

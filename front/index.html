@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Webpack App</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>CyberAthletes Store</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li>
+              <a href="#">Каталог</a>
+              <ul class="submenu">
+                <li><a class="players_k" href="#">Каталог Играков</a></li>
+                <li><a class="players_s" href="#">Каталог Стаф</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#" class="cart-icon">🛒</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="main-content container"></section>
+
+    <div class="cart-container">
+      <div class="cart">
+        <h2>Корзина</h2>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <span>Итого:</span>
+          <span class="total-price">$0.00</span>
+        </div>
+        <button class="checkout">Оформить заказ</button>
+      </div>
+    </div>
+  </body>
+</html>
